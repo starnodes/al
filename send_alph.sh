@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#insert your variables
+#insert variables
 api_key=
 wallet_name=
 wallet_pass=
