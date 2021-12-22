@@ -28,7 +28,7 @@ Alias=miner333.service
 EOF
 
 sudo systemctl daemon-reload
-sudo systemctl disable miner333
+sudo systemctl enable miner333
 sudo systemctl restart miner333
 
 journalctl -f -u miner333
