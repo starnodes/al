@@ -28,15 +28,15 @@ WantedBy=multi-user.target
 EOF
 
 sudo tee $HOME/.alephium/user.conf > /dev/null <<EOF
-alephium.api.api-key = "'$api_key'"
+alephium.api.api-key = "$api_key"
 #dont forget change api key
 alephium.mining.api-interface = "0.0.0.0"
 alephium.api.network-interface = "0.0.0.0"
 alephium.mining.miner-addresses = [
-  "'$miner_adress1'",
-  "'$miner_adress2'",
-  "'$miner_adress3'",
-  "'$miner_adress4'" ]
+  "$miner_adress1",
+  "$miner_adress2",
+  "$miner_adress3",
+  "$miner_adress4" ]
 #dont forget change miner addresses
 EOF
 

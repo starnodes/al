@@ -20,7 +20,7 @@ Restart=always
 #RuntimeMaxSec=3600
 WorkingDirectory=/miner
 TimeoutSec=180
-ExecStart=/miner/alephium-cuda-miner -a '$node_server'
+ExecStart=/miner/alephium-cuda-miner -a $node_server
 
 [Install]
 WantedBy=multi-user.target
