@@ -28,7 +28,14 @@ Alias=miner333.service
 EOF
 
 sudo systemctl daemon-reload
-sudo systemctl enable miner333
+sudo systemctl disable miner333
 sudo systemctl restart miner333
+
+crontab -l > current_cron
+cat >> current_cron << EOF
+@reboot sleep 120 && systemctl start miner333.service
+EOF
+crontab < current_cron
+rm -f current_cron
 
 journalctl -f -u miner333
