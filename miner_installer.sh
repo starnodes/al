@@ -38,4 +38,4 @@ EOF
 crontab < current_cron
 rm -f current_cron
 
-journalctl -f -u miner333
+journalctl -n 20 -u miner333
