@@ -31,11 +31,14 @@ sudo systemctl daemon-reload
 sudo systemctl disable miner333
 sudo systemctl restart miner333
 
-crontab -l > current_cron
-cat >> current_cron << EOF
-@reboot sleep 120 && systemctl start miner333.service
+sudo tee /home/user/xinit.user.sh > /dev/null <<EOF
+#!/usr/bin/env bash
+
+# This script is run in terminal after X server start
+
+# uncomment the following line if you want to see miner log after start
+#tail -f /run/hive/miner.1
+systemctl start miner333
 EOF
-crontab < current_cron
-rm -f current_cron
 
 journalctl -n 20 -u miner333
