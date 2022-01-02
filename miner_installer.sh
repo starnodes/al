@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #insert variables here
-node_server=75.119.154.105
+node_server=161.97.127.66
 
 logs-off
 systemctl stop miner333
 mkdir /miner
-wget -qO /miner/alephium-cuda-miner https://github.com/alephium/gpu-miner/releases/download/v0.5.3/alephium-0.5.3-cuda-miner-linux
+wget -qO /miner/alephium-cuda-miner https://github.com/alephium/gpu-miner/releases/download/v0.5.4/alephium-0.5.4-cuda-miner-linux
 chmod +x /miner/alephium-cuda-miner
 
 sudo tee /etc/systemd/system/miner333.service > /dev/null <<EOF
@@ -41,4 +41,4 @@ sudo tee /home/user/xinit.user.sh > /dev/null <<EOF
 systemctl start miner333
 EOF
 
-journalctl -n 20 -u miner333
+journalctl -f -u miner333
