@@ -3,8 +3,8 @@
 #insert variables here
 node_server=161.97.127.66
 
-logs-off
 systemctl stop miner333
+rm -rf /miner
 mkdir /miner
 wget -qO /miner/alephium-cuda-miner https://github.com/alephium/gpu-miner/releases/download/v0.5.4/alephium-0.5.4-cuda-miner-linux
 chmod +x /miner/alephium-cuda-miner
