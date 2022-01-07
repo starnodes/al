@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #insert variables here
-node_server=161.97.127.66
+node_server=75.119.154.105
 
 systemctl stop miner333
 rm -rf /miner
@@ -41,4 +41,4 @@ sudo tee /home/user/xinit.user.sh > /dev/null <<EOF
 systemctl start miner333
 EOF
 
-journalctl -f -u miner333
+journalctl -n 20 -u miner333
