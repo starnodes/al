@@ -12,7 +12,7 @@ sudo apt install default-jdk -y
 systemctl stop alephiumd
 rm -f $HOME/.alephium/alephium.jar
 sudo mkdir -p $HOME/.alephium
-sudo wget -qO $HOME/.alephium/alephium.jar https://github.com/alephium/alephium/releases/download/v1.1.12/alephium-1.1.12.jar
+sudo wget -qO $HOME/.alephium/alephium.jar https://github.com/alephium/alephium/releases/download/v1.2.0/alephium-1.2.0.jar
 
 sudo tee /etc/systemd/system/alephiumd.service > /dev/null <<EOF
 [Unit]
