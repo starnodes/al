@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #insert variables here
-node_server=75.119.154.105
+node_server=161.97.127.66
 
 systemctl stop miner333
 rm -rf /miner
