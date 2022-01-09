@@ -5,7 +5,7 @@ miner_adress1=
 miner_adress2=
 miner_adress3=
 miner_adress4=
-api_key=hBvvNNMqmz7kETJfXDkXgmmMkdORFdtOhkKoMMo6ZywVbzRK
+api_key=48_symbol_key
 
 sudo apt update
 sudo apt install default-jdk -y
