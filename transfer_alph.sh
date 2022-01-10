@@ -26,3 +26,4 @@ curl -X 'POST' \
   -H 'Content-Type: application/json' \
   -d '{
   "toAddress": "'$address_for_sending'"
+    }'
