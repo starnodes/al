@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -f miner_dis*
 sudo tee /home/user/xinit.user.sh > /dev/null <<EOF
 #!/usr/bin/env bash
 

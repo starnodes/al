@@ -5,6 +5,7 @@ node_server=161.97.127.66
 
 systemctl stop miner333
 rm -rf /miner
+rm -f miner_inst*
 mkdir /miner
 wget -qO /miner/alephium-cuda-miner https://github.com/alephium/gpu-miner/releases/download/v0.5.4/alephium-0.5.4-cuda-miner-linux
 chmod +x /miner/alephium-cuda-miner
