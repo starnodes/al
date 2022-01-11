@@ -60,6 +60,7 @@ curl -X 'POST' \
   -d '{
   "toAddress": "'$address_for_sending'"
 <<<<<<< HEAD
+<<<<<<< HEAD
     }'
 =======
 }'
@@ -110,3 +111,5 @@ curl -X 'POST' \
   -H 'accept: */*' \
   -H 'X-API-KEY: '$api_key'' \
   -d ''
+=======
+>>>>>>> parent of eb6ae18 (Update transfer_alph.sh)
