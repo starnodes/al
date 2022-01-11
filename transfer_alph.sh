@@ -110,4 +110,3 @@ curl -X 'POST' \
   -H 'accept: */*' \
   -H 'X-API-KEY: '$api_key'' \
   -d ''
->>>>>>> parent of 40c448d (Update transfer_alph.sh)
