@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #insert variables here
-miner_adress1=
-miner_adress2=
-miner_adress3=
-miner_adress4=
+miner_adress1=addr1
+miner_adress2=addr2
+miner_adress3=addr3
+miner_adress4=addr4
 api_key=48_symbol_key
 
 sudo apt update
